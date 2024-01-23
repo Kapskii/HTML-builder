@@ -14,7 +14,7 @@ async function dublicate() {
       const sourceFP = path.join(sourceFolder, file);
       const destinationFP = path.join(destinationFolder, file);
 
-      await fs.dublicateFile(sourceFP, destinationFP);
+      await fs.copyFile(sourceFP, destinationFP);
     }
 
     console.log('Directory dublication.');
