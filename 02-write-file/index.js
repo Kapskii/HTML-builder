@@ -28,3 +28,8 @@ rl.on('line', (input) => {
     rl.prompt();
   }
 });
+
+rl.on('SIGINT', () => {
+  console.log('Bye - Bye!');
+  rl.close();
+});
