@@ -22,10 +22,7 @@ fs.readdir(folderPath, (err, files) => {
         const filename = path.parse(file).name;
         const extension = path.parse(file).ext.slice(1);
         const fileSize = (stats.size / 1024).toFixed(2);
-
         console.log(`${filename} - ${extension} - ${fileSize}kb`);
-      } else {
-        console.error(`${file} is not a file.`);
       }
     });
   });
